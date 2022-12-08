@@ -1,12 +1,27 @@
-
-img{
-    width: 250px;
-    border-radius: 10px 10px;
+body{
+    background-color: antiquewhite;
 }
 .container{
-    display:grid;
-    justify-content: center;
-    
-    
-
+    text-align: center;
+}
+img{
+    width:100%;
+}
+.containerImgItem{
+width:200px;
+background-color: gray;
+padding: 5px;
+}
+.listAlphabet{
+    display: flex;
+}
+.alphabet{
+  width: 60px;
+  height:20px;
+  background-color: blueviolet;
+  margin: 10px 10px;
+  display: flex;
+  /* height: 30px; */
+  justify-content: center;
+  align-items: center;
 }

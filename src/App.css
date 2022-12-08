@@ -1,4 +1,7 @@
-.App{
-    background-color:aquamarine;
-    display: flex;
+.appImgBox{
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,4px));
+    grid-gap:15px;
 }

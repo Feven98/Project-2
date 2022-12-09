@@ -9,14 +9,10 @@ import FoodDetail from './components/FoodDetail';
 function App() {
   return (
     <div className="App">
-      <Router>
       <Routes>
-        {/* <Route path='/' element={<FoodContainer/>}/> */}
-        <Route path='/:MealId' element={<FoodDetail/>}/>
-      </Routes>
-      </Router>
-      
-  <FoodContainer/>
+        <Route path='/' element={<FoodContainer/>}/>
+        <Route path='/detail/:idMeal' element={<FoodDetail/>}/>
+      </Routes>  
     </div>
   );
 }

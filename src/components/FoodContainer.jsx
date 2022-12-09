@@ -8,7 +8,6 @@ function FoodContainer(props){
     const[url,setUrl]=useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
     async function fetchId() {
             try {
-                // const response = await fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=a");
                 const response = await fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=");
                 const foodData = await response.json()
                 console.log(foodData.meals)
@@ -36,14 +35,14 @@ return(
         <div className="searchCase">
             <input type="search" className="searchBox"/>
         </div>
+        <div className="listAlphabet">
+    <FoodRecipe listValue={(list)=>recipeUrl(list)}/>
+  </div>
         <div className='appImgBox'>
 {
     isloading ? <FoodItem foodData={food}/>: "Not Found"
 }
   
-  </div>
-  <div className="listAlphabet">
-    <FoodRecipe listValue={(list)=>recipeUrl(list)}/>
   </div>
     </div>
 )

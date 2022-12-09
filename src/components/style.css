@@ -17,11 +17,15 @@ padding: 5px;
 }
 .alphabet{
   width: 60px;
-  height:20px;
+  height:30px;
   background-color: blueviolet;
   margin: 10px 10px;
   display: flex;
   /* height: 30px; */
   justify-content: center;
   align-items: center;
+}
+.meal img{
+width: 500px;
+margin: 20px 100px;
 }

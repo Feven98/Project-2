@@ -37,17 +37,16 @@ return(
             <p>{detail.strIngredient3}: {detail.strMeasure3}</p>
             <p>{detail.strIngredient4}: {detail.strMeasure4}</p>
             <p>{detail.strIngredient5}: {detail.strMeasure6}</p>
-            <p>{detail.strIngredient7}: {detail.strMeasure}</p>
+            <p>{detail.strIngredient7}: {detail.strMeasure7}</p>
             <p>{detail.strIngredient8}: {detail.strMeasure8}</p>
             <p>{detail.strIngredient9}: {detail.strMeasure9}</p>
             <p>{detail.strIngredient10}: {detail.strMeasure10}</p>
             <p>{detail.strIngredient11}: {detail.strMeasure11}</p>
             <p>{detail.strIngredient12}: {detail.strMeasure12}</p>
             <p>{detail.strIngredient13}: {detail.strMeasure13}</p>
-            <p>{detail.strIngredient14}: {detail.strMeasure14}</p>
         </div>
         <div className="instruction">
-            <h2>Insruction</h2>
+            <h2>Instruction</h2>
             <p>{detail.strInstructions}</p>
         </div>
         <div className="video">

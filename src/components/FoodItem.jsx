@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 function FoodItem({foodData}){
-    console.log(foodData)
+    // console.log(foodData)
     return(
         <>
         {

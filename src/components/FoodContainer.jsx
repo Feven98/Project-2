@@ -1,18 +1,23 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import FoodItem from "./FoodItem";
-import FoodRecipe from "./FoodRecipe";
+import FoodRecipe from "./FoodRecipe"
+import SearchBar from "./SearchBar";
 function FoodContainer(props){
     const[food, setFoods] = useState([])
     const[isloading,setIsloading]=useState(false)
-    const[url,setUrl]=useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
+    // const[searchurl,setsearchUrl]=useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
+    const[find,setFind]=useState("");
+    const apiUrl="https://www.themealdb.com/api/json/v1/1/search.php?s="
     async function fetchId() {
             try {
-                const response = await fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=");
+                const Url=apiUrl+find;
+                const response = await fetch(Url);
                 const foodData = await response.json()
-                console.log(foodData.meals)
+                // console.log(foodData.meals)
                 setFoods(foodData.meals)
                 setIsloading(true);
+
                 } catch (err) {
                     console.log(err)
                 }
@@ -20,24 +25,26 @@ function FoodContainer(props){
         useEffect(() => {
             fetchId()
         }, []);
-const recipeUrl=(list)=>{
-    setUrl("https://www.themealdb.com/api/json/v1/1/search.php?f=${list}")
-}
-
-
+const handleSubmit=event=>{
+    event.preventDefault()
+    fetchId()
+};
 
 return(
-    <div className="container">
-        <div className="title">
-            <h1>This is the receipe for food</h1>
-            <h4>Description</h4>
-        </div>
-        <div className="searchCase">
-            <input type="search" className="searchBox"/>
-        </div>
+    <div className="content">
+         <div className="searchCase">
+            {/* <input type="search" className="searchBox" placeholder="Enter Food Name"/>
+            <button className="search-button" type="submit">Search</button> */}
+            <SearchBar
+            handleSubmit={handleSubmit}
+            value={find}
+            onChange={event=>setFind(event.target.value)}
+            isloading={isloading}
+            />
+        </div> 
         <div className="listAlphabet">
-    <FoodRecipe listValue={(list)=>recipeUrl(list)}/>
-  </div>
+    <FoodRecipe />
+  </div>     
         <div className='appImgBox'>
 {
     isloading ? <FoodItem foodData={food}/>: "Not Found"

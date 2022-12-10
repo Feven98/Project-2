@@ -3,13 +3,16 @@ import { useEffect, useState } from "react";
 import FoodItem from "./FoodItem";
 import FoodRecipe from "./FoodRecipe"
 import SearchBar from "./SearchBar";
+import {FaHome} from "react-icons/fa"
 function FoodContainer(props){
-    const[food, setFoods] = useState([])
+    const[foods, setFoods] = useState([])
     const[isloading,setIsloading]=useState(false)
-    // const[searchurl,setsearchUrl]=useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
+    const[searchurl,setsearchUrl]=useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
     const[find,setFind]=useState("");
+
     const apiUrl="https://www.themealdb.com/api/json/v1/1/search.php?s="
-    async function fetchId() {
+
+    async function fetchId(find) {
             try {
                 const Url=apiUrl+find;
                 const response = await fetch(Url);
@@ -23,18 +26,29 @@ function FoodContainer(props){
                 }
             }
         useEffect(() => {
-            fetchId()
+            fetchId(find)
         }, []);
+
+        useEffect(()=>{
+fetch(searchurl)
+.then(res=>res.json())
+    .then(data=>{
+     console.log(data.meals)
+     setFoods(data.meals)
+     setIsloading(true);
+    })
+        },[searchurl])
 const handleSubmit=event=>{
     event.preventDefault()
-    fetchId()
+    fetchId(find)
 };
-
+const setIndex=(list)=>{
+    setsearchUrl(`https://www.themealdb.com/api/json/v1/1/search.php?f=${list}`)
+}
 return(
     <div className="content">
+        <FaHome/>
          <div className="searchCase">
-            {/* <input type="search" className="searchBox" placeholder="Enter Food Name"/>
-            <button className="search-button" type="submit">Search</button> */}
             <SearchBar
             handleSubmit={handleSubmit}
             value={find}
@@ -43,11 +57,13 @@ return(
             />
         </div> 
         <div className="listAlphabet">
-    <FoodRecipe />
+            {
+    isloading? <FoodRecipe data={find} listIndex={(list)=>setIndex(list)}/>: 'none'
+            }
   </div>     
         <div className='appImgBox'>
 {
-    isloading ? <FoodItem foodData={food}/>: "Not Found"
+    isloading ? <FoodItem foodData={foods}/>: "Not Found"
 }
   
   </div>

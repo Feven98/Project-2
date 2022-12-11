@@ -1,15 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 body{
-    background-color: antiquewhite;
+  background-color: rgb(180, 171, 201);
+  font-family: 'PT Sans', sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+}
+.title{
+    background-image: url("https://previews.123rf.com/images/vell/vell1508/vell150800078/44194588-blank-book-recipes-and-various-spices-food-background-with-copyspace.jpg");
+    height: 300px;
+    width: 1301px;
+    margin: 5px 50px;
+    color:darkblue;
+    border-radius: 2rem;
+}
+form{
+    display: flex;
+    width: 200px;
+    /* height:20px; */
+    justify-content: center;
+    justify-items: center;
+}
+input{
+    border: 3px solid rgb(5, 5, 165);
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(126, 124, 140);
+    color: bisque;
+}
+input:focus{
+    outline: none;
+}
+.form{
+border-radius: 10px;
+width: 400px;
+}
+.btn{
+border-radius: 10px;
+cursor: pointer;
+}
+.searchCase{
+margin: 110px 550px;
+padding: 10px;
 }
 .container{
     text-align: center;
 }
 img{
     width:100%;
+    border-radius: 1rem;
 }
 .containerImgItem{
 width:200px;
-background-color: gray;
+/* background-color: rgb(172, 102, 174); */
 padding: 5px;
 }
 .listAlphabet{
@@ -18,14 +60,27 @@ padding: 5px;
 .alphabet{
   width: 60px;
   height:30px;
-  background-color: blueviolet;
+  background-color: rgb(88, 74, 101);
   margin: 10px 10px;
   display: flex;
-  /* height: 30px; */
+  border-radius: 1rem;
   justify-content: center;
   align-items: center;
+  color: rgb(51, 6, 6);
 }
 .meal img{
-width: 500px;
+width: 600px;
 margin: 20px 100px;
+border-radius: 4rem;
+}
+.recipe, .instruction{
+    text-align:justify;
+    flex-basis: 1000%;
+}
+.video{
+    width: 100px;
+    height: 100px;
+}
+.icon{
+    display: flex;
 }

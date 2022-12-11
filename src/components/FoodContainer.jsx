@@ -4,6 +4,7 @@ import FoodItem from "./FoodItem";
 import FoodRecipe from "./FoodRecipe"
 import SearchBar from "./SearchBar";
 import {FaHome} from "react-icons/fa"
+import { Link } from "react-router-dom";
 function FoodContainer(props){
     const[foods, setFoods] = useState([])
     const[isloading,setIsloading]=useState(false)
@@ -47,7 +48,13 @@ const setIndex=(list)=>{
 }
 return(
     <div className="content">
-        <FaHome/>
+      <div className="title">
+            <h1>This is the Receipe For Meal</h1>
+            {/* <h4>Description</h4> */}
+             {/* <nav>
+              <Link to='/'><div className='icon'><FaHome/></div></Link>
+              <Link to='/detail/:idMeal'><div><FaHome/></div></Link>
+            </nav> */}
          <div className="searchCase">
             <SearchBar
             handleSubmit={handleSubmit}
@@ -56,6 +63,7 @@ return(
             isloading={isloading}
             />
         </div> 
+        </div>
         <div className="listAlphabet">
             {
     isloading? <FoodRecipe data={find} listIndex={(list)=>setIndex(list)}/>: 'none'

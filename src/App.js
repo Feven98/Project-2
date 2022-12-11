@@ -8,16 +8,20 @@ import FoodDetail from './components/FoodDetail';
 import SearchBar from './components/SearchBar';
 import FoodRecipe from './components/FoodRecipe';
 import { useState, useEffect } from 'react';
+import { FaHome } from 'react-icons/fa';
 function App() {
   
   return (
     <div className="App">
       <div className="container">
-      <div className="title">
+      {/* <div className="title">
             <h1>This is the receipe for food</h1>
             <h4>Description</h4>
-             </div>
-            
+             </div> */}
+            <nav>
+              <Link to='/'><div className='icon'><FaHome/></div></Link>
+              {/* <Link to='/recipe/:list'><div><FaHome/></div></Link> */}
+            </nav>
       <Routes>
         <Route path='/' element={<FoodContainer/>}/>
         <Route path='/detail/:idMeal' element={<FoodDetail/>}/>

@@ -1,4 +1,5 @@
 import React from "react";
+import {FaSearch, FcSearch} from "react-icons/fa"
 const SearchBar=({
     value,
     handleSubmit,
@@ -6,17 +7,18 @@ const SearchBar=({
     onChange
 })=>{
 return(
-    <div className="container">
+    <div className="search-container">
         <form onSubmit={handleSubmit}>
             <input value={value}
                    disabled={isLoading}
                    onChange={onChange}
-                   placeholder="search"
+                   placeholder='MEAL'
                    className="form"
             />
+            <i className="FaSearch"></i>
             <input type="submit"
                    className="btn"
-                   value="search"
+                   value="Search"
                    disabled={isLoading || !value}
             />
 

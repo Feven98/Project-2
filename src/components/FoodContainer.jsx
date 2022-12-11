@@ -3,16 +3,18 @@ import { useEffect, useState } from "react";
 import FoodItem from "./FoodItem";
 import FoodRecipe from "./FoodRecipe"
 import SearchBar from "./SearchBar";
-import {FaHome} from "react-icons/fa"
-import { Link } from "react-router-dom";
+
 function FoodContainer(props){
+// Declaring useState hook 
     const[foods, setFoods] = useState([])
     const[isloading,setIsloading]=useState(false)
     const[searchurl,setsearchUrl]=useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
     const[find,setFind]=useState("");
 
+// Declaring API key 
     const apiUrl="https://www.themealdb.com/api/json/v1/1/search.php?s="
 
+// Fetching data from the first api (For FoodItem)
     async function fetchId(find) {
             try {
                 const Url=apiUrl+find;
@@ -30,6 +32,7 @@ function FoodContainer(props){
             fetchId(find)
         }, []);
 
+// Fetching data from the second api (for FoodRecipe)
         useEffect(()=>{
 fetch(searchurl)
 .then(res=>res.json())
@@ -39,10 +42,14 @@ fetch(searchurl)
      setIsloading(true);
     })
         },[searchurl])
+
+ // Creating a function for searchbar       
 const handleSubmit=event=>{
     event.preventDefault()
     fetchId(find)
 };
+
+// creating function and setting AOI for list item
 const setIndex=(list)=>{
     setsearchUrl(`https://www.themealdb.com/api/json/v1/1/search.php?f=${list}`)
 }
@@ -50,11 +57,8 @@ return(
     <div className="content">
       <div className="title">
             <h1>This is the Receipe For Meal</h1>
-            {/* <h4>Description</h4> */}
-             {/* <nav>
-              <Link to='/'><div className='icon'><FaHome/></div></Link>
-              <Link to='/detail/:idMeal'><div><FaHome/></div></Link>
-            </nav> */}
+
+{/* rendereng the functions */}
          <div className="searchCase">
             <SearchBar
             handleSubmit={handleSubmit}
@@ -63,18 +67,17 @@ return(
             isloading={isloading}
             />
         </div> 
-        </div>
+    </div>
         <div className="listAlphabet">
             {
     isloading? <FoodRecipe data={find} listIndex={(list)=>setIndex(list)}/>: 'none'
             }
-  </div>     
+        </div>     
         <div className='appImgBox'>
-{
+            {
     isloading ? <FoodItem foodData={foods}/>: "Not Found"
-}
-  
-  </div>
+            }
+        </div>
     </div>
 )
 }

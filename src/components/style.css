@@ -16,7 +16,6 @@ body{
 form{
     display: flex;
     width: 200px;
-    /* height:20px; */
     justify-content: center;
     justify-items: center;
 }
@@ -51,7 +50,6 @@ img{
 }
 .containerImgItem{
 width:200px;
-/* background-color: rgb(172, 102, 174); */
 padding: 5px;
 }
 .listAlphabet{
@@ -76,10 +74,7 @@ border-radius: 4rem;
 .recipe, .instruction{
     text-align:justify;
     flex-basis: 1000%;
-}
-.video{
-    width: 100px;
-    height: 100px;
+    margin:  0 60px;
 }
 .icon{
     display: flex;

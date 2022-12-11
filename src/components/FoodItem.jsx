@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
+
+// creating function for fooditem that accept props from foodcontainer
 function FoodItem({foodData}){
     // console.log(foodData)
     return(

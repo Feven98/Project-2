@@ -2,7 +2,7 @@
 
 ## Description 
 
-This project is an app that displays the food recipe. It has different kinds of menu to choose from. It let's you search for the recipe you want or you can select from the alphabet listed. If it not found the recipe you are looking for, it will let you know with "Not Found" text. 
+This project is an app that displays the food recipe using API from [https://www.themealdb.com/api.php]. It has different kinds of menu to choose from. It let's you search for the recipe you want or you can select from the alphabet listed. If it not found the recipe you are looking for, it will let you know with "Not Found" text. 
 
 Its has the picture, meal and catagory in the home screen. When you click on it, it will display
 
@@ -33,8 +33,17 @@ Its has the picture, meal and catagory in the home screen. When you click on it,
 - JSX
 - Node.js
 
+## Installation Instruction
 
+- First, fork and clone this repositary.
+- Then, you need to create new directory and clone it.
+- Install dependencies (npm install).
+- After that, open your VS code (code .) on your terminal.
+- Finally, run npm start to start your local server.
 
+## Contribution Guideliance
+
+If you have any suggestion, bugs, Email [rutemikey1@gmail.com]
 
 
 

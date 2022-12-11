@@ -1,5 +1,6 @@
 import React from "react";
-import {FaSearch, FcSearch} from "react-icons/fa"
+
+// creating function that accept props for searchbar
 const SearchBar=({
     value,
     handleSubmit,

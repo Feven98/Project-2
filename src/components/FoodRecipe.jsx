@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import React from "react";
+
 function FoodRecipe({listIndex}){
+
 const list=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z"];
 
     return(

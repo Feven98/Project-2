@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
 function FoodDetail(props){
+
+// creating a useState hook
 const[detail,setDetail]=useState()
+
+// creating useParams hook
 let {idMeal}= useParams()
+
+// create function for the api
 const URL=`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`
 
-
+// creating useEffect hook to fetch data
 useEffect(()=>{
 fetch(URL)
 .then((res)=>res.json())
@@ -14,6 +21,8 @@ setDetail(json.meals[0])
 // console.log(json.meals[0])
 }).catch(console.err)
 }, [])
+
+// Creating function for the video 
 let videoUrl=""
 if(detail){
     const youtubeUrl=detail.strYoutube;

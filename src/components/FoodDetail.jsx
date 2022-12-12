@@ -23,7 +23,7 @@ setDetail(json.meals[0])
 }, [])
 
 // Creating function for the video 
-let videoUrl=""
+let videoUrl= ""
 if(detail){
     const youtubeUrl=detail.strYoutube;
     const str=youtubeUrl.split("=");

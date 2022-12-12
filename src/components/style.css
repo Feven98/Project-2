@@ -12,6 +12,7 @@ body{
     margin: 5px 50px;
     color:darkblue;
     border-radius: 2rem;
+    padding: 5px;;
 }
 form{
     display: flex;

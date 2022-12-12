@@ -45,7 +45,7 @@ Link: [https://www.figma.com/file/hA6RVdvm433YjCJaj1dyUv/Untitled?node-id=0%3A1&
 - After that, open your VS code (code .) on your terminal.
 - Finally, run npm start to start your local server.
 
-## Streach Goal
+## Future Features
 
 I was abel to get the MVP required and also got one of the streatch goal I put on when planning this project. But next I will add the following goals and work on it.
 

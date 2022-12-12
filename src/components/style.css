@@ -65,6 +65,7 @@ img{
   justify-content: center;
   align-items: center;
   color: rgb(51, 6, 6);
+  padding: 3px;
 }
 .meal img{
     width: 600px;

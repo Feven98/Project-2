@@ -20,11 +20,11 @@ Link: [https://www.figma.com/file/hA6RVdvm433YjCJaj1dyUv/Untitled?node-id=0%3A1&
 
 <img width="1400" alt="Screenshot 2022-12-11 at 1 31 40 AM" src="https://user-images.githubusercontent.com/117063196/206889956-3a6725c7-b388-40d1-b2d6-e9fb6a5ca1f9.png">
 
-### Detailpage 1
+### Detail-page 1
 
 <img width="1412" alt="Screenshot 2022-12-11 at 1 35 15 AM" src="https://user-images.githubusercontent.com/117063196/206889976-45026150-1afc-4d62-bae4-b1c40b43cb24.png">
 
-### Detailpage 2
+### Detail-page 2
 
 <img width="1412" alt="Screenshot 2022-12-11 at 1 35 22 AM" src="https://user-images.githubusercontent.com/117063196/206889983-2110c8d1-4c9f-4230-a167-bfb02dc28456.png">
 

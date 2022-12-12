@@ -16,7 +16,6 @@ return(
                    placeholder='MEAL'
                    className="form"
             />
-            <i className="FaSearch"></i>
             <input type="submit"
                    className="btn"
                    value="Search"

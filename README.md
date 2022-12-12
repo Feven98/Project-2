@@ -37,7 +37,7 @@ Link: [https://www.figma.com/file/hA6RVdvm433YjCJaj1dyUv/Untitled?node-id=0%3A1&
 - JSX
 - Node.js
 
-## Installation Instruction
+## Getting Started/ Installation Instruction
 
 - First, fork and clone this repositary.
 - Then, you need to create new directory and clone it.

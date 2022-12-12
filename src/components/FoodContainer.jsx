@@ -70,7 +70,7 @@ return(
     </div>
         <div className="listAlphabet">
             {
-    isloading? <FoodRecipe data={find} listIndex={(list)=>setIndex(list)}/>: 'none'
+    isloading? <FoodRecipe data={find} listIndex={(list)=>setIndex(list)}/>: 'None'
             }
         </div>     
         <div className='appImgBox'>

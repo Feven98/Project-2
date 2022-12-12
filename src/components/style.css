@@ -73,7 +73,6 @@ img{
 }
 .recipe, .instruction{
     text-align:justify;
-    flex-basis: 1000%;
     margin:  0 60px;
 }
 .icon{

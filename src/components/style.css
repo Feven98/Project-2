@@ -46,7 +46,7 @@ input:focus{
 }
 img{
     width:100%;
-    border-radius: 1rem;
+    border-radius: 0.8rem;
 }
 .containerImgItem{
     width:200px;

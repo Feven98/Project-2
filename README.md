@@ -28,14 +28,6 @@ Link: [https://www.figma.com/file/hA6RVdvm433YjCJaj1dyUv/Untitled?node-id=0%3A1&
 
 <img width="1412" alt="Screenshot 2022-12-11 at 1 35 22 AM" src="https://user-images.githubusercontent.com/117063196/206889983-2110c8d1-4c9f-4230-a167-bfb02dc28456.png">
 
-## Technology Used
-
-- JavaScript
-- HTML
-- CSS 
-- React.js
-- JSX
-- Node.js
 
 ## Getting Started/ Installation Instruction
 

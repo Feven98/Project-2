@@ -3,6 +3,7 @@
 - API link: https://www.themealdb.com/api.php
 
 - Description of the project:
+
 Its food receipe app that can enable users to search their food and find the recipe of that food. It also has alphabetical order that can enabel you to choose from the list.
 
 - Stretch Goal:

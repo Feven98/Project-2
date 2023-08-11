@@ -51,7 +51,6 @@ I was abel to get the MVP required and also got one of the streatch goal I put o
 
 - Storing favorite food the user want
 - Adding some CSS
-- Setting domain name to change URL
 - Setting it to be mobile responsive 
  
 ## Contribution Guideliance

@@ -4,7 +4,7 @@
 
 This project is an app that displays the food recipe using API from [https://www.themealdb.com/api.php]. It has different kinds of menu to choose from. It let's you search for the recipe you want or you can select from the alphabet listed. If you do not found the recipe you are looking for, it will let you know with "Not Found" text. 
 
-It has the picture, meal and catagory in the home screen. When you click on it, it will display
+It has the picture, meal and catagory in the home screen. When you click on it, it will display the:
 
 * Ingriedients
 * Instruction (on how to make it)

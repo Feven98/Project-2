@@ -1,6 +1,6 @@
 # Project 2 - FOOD RECIPE APP
 
-## Description 
+## Descriptions 
 
 This project is an app that displays the food recipe using API from [https://www.themealdb.com/api.php]. It has different kinds of menu to choose from. It let's you search for the recipe you want or you can select from the alphabet listed. If you do not found the recipe you are looking for, it will let you know with "Not Found" text. 
 

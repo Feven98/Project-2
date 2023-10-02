@@ -24,7 +24,7 @@ Link: [https://www.figma.com/file/hA6RVdvm433YjCJaj1dyUv/Untitled?node-id=0%3A1&
 
 <img width="1412" alt="Screenshot 2022-12-11 at 1 35 15 AM" src="https://user-images.githubusercontent.com/117063196/206889976-45026150-1afc-4d62-bae4-b1c40b43cb24.png">
 
-### Detail-page 2
+### Detail-page-2
 
 <img width="1412" alt="Screenshot 2022-12-11 at 1 35 22 AM" src="https://user-images.githubusercontent.com/117063196/206889983-2110c8d1-4c9f-4230-a167-bfb02dc28456.png">
 

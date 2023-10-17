@@ -6,7 +6,7 @@ This project is an app that displays the food recipe using API from [https://www
 
 It has the picture, meal and catagory in the home screen. When you click on it, it will display the:
 
-* Ingriedient
+* Ingriedients
 * Instruction (on how to make it)
 * video (To follow)
 
